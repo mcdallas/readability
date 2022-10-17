@@ -1,13 +1,14 @@
 [package]
-name = "readability"
+name = "readability-async"
 version = "0.2.0"
 authors = ["Hiroki Kumamoto <kumabook@live.jp>"]
 license = "MIT"
-homepage = "https://github.com/kumabook/readability"
-repository = "https://github.com/kumabook/readability.git"
-description = "Port of arc90's readability project to rust"
+homepage = "https://github.com/mcdallas/readability"
+repository = "https://github.com/mcdallas/readability.git"
+description = "async fork of 'readability' crate"
 keywords = ["readability"]
 categories = []
+edition = "2018"
 
 [dependencies]
 regex = "1.4"
