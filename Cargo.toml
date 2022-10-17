@@ -1,7 +1,7 @@
 [package]
 name = "readability-async"
 version = "0.2.0"
-authors = ["Hiroki Kumamoto <kumabook@live.jp>"]
+authors = ["Mike Dallas <mcdallas@protonmail.com>"]
 license = "MIT"
 homepage = "https://github.com/mcdallas/readability"
 repository = "https://github.com/mcdallas/readability.git"
@@ -20,7 +20,6 @@ lazy_static = "1.4"
 [dependencies.reqwest]
 version = "0.11"
 optional = true
-features = ["blocking"]
 
 [features]
 default = ["reqwest"]

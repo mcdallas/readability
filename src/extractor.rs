@@ -7,8 +7,6 @@ use html5ever::{parse_document, serialize};
 use html5ever::tendril::stream::TendrilSink;
 use std::default::Default;
 #[cfg(feature = "reqwest")]
-use std::time::Duration;
-#[cfg(feature = "reqwest")]
 use reqwest::Client;
 use url::Url;
 use scorer::Candidate;
@@ -27,7 +25,6 @@ pub struct Product {
 #[cfg(feature = "reqwest")]
 pub async fn scrape(url: &str) -> Result<Product, Error> {
     let client = Client::builder()
-        .timeout(Duration::new(30, 0))
         .build()?;
     scrape_with_client(url, &client).await
 }
